@@ -61,13 +61,17 @@
     }
   }
 
-  @media (max-width: 680px) {
+  @media (max-width: 780px) {
     .container {
       flex-direction: column;
     }
 
-    .navbar__links-wrapper {
-      flex-direction: column;
+    &__links {
+      margin-top: 0.625rem;
+
+      &-wrapper {
+        flex-direction: column;
+      }
     }
   }
 
