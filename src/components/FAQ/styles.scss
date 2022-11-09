@@ -1,0 +1,55 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.faq {
+  background: $warmWhite;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  &__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+    text-align: center;
+    letter-spacing: -0.009375rem;
+    margin-bottom: 3.75rem;
+    color: $grey;
+  }
+
+  .accordion {
+    background: $white;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05), 0px 1px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 0.1875rem;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+
+    &__button {
+      @include spaceBetween;
+      align-items: center;
+      cursor: pointer;
+
+      > p {
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: $grey;
+      }
+    }
+
+    &__panel {
+      @include regular16Text;
+      line-height: 1.5rem;
+      color: $grey;
+
+      > p {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        margin-right: 5.5rem;
+        margin-bottom: 0.625rem;
+        @include regular16Text;
+        line-height: 1.5rem;
+        color: $grey;
+      }
+    }
+  }
+}

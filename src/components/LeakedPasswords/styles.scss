@@ -1,0 +1,99 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.leaked-passwords {
+  &__title {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.3125rem;
+    text-align: center;
+    letter-spacing: -0.009375rem;
+    color: $grey;
+    padding-bottom: 2.8125rem;
+  }
+
+  &__header {
+    @include spaceBetween;
+    align-items: center;
+  }
+
+  &__dropdown {
+    background: $white;
+    border: 1px solid $baseGrey;
+    border-radius: 0.1875rem;
+    padding-top: 0.4375rem;
+    padding-bottom: 0.4375rem;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 16.3125rem;
+    @include spaceBetween;
+    align-items: center;
+    cursor: pointer;
+    @include regular16Text;
+    line-height: 1.75rem;
+    color: $darkestGrey;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='$baseGrey' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position-x: 95%;
+    background-position-y: 0.625rem;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    .table {
+      &__number {
+        @include regular16Text;
+        line-height: 1.75rem;
+        color: $grey;
+        width: 2.5rem;
+      }
+
+      &__count {
+        @include regular16Text;
+        line-height: 1.75rem;
+        text-align: right;
+        color: $darkestGrey;
+      }
+    }
+  }
+
+  .text-bold {
+    @include bold16Text;
+    line-height: 1.5rem;
+    text-align: left;
+    color: $grey;
+  }
+
+  .show-all-button {
+    display: block;
+    margin: 2.25rem auto 6rem auto;
+  }
+
+  td,
+  .leaked-passwords__header {
+    border-bottom: 1px solid $coldWhite;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  @media (max-width: 880px) {
+    &__title {
+      margin-top: 6.25rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__dropdown {
+      width: 6.25rem;
+    }
+
+    &__title {
+      margin-top: 2.25rem;
+    }
+  }
+}

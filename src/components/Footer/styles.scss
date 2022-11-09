@@ -1,0 +1,24 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+footer {
+  background: $white;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+
+  .footer {
+    @include spaceBetween;
+    align-items: flex-end;
+
+    &__text {
+      margin-bottom: 0.75rem;
+
+      &-grey {
+        color: $baseGrey;
+      }
+    }
+  }
+}

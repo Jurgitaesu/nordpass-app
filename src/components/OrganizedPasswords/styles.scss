@@ -1,0 +1,48 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.organized-passwords {
+  height: 42rem;
+  display: flex;
+  @include alignCenter;
+
+  &__title {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4rem;
+    letter-spacing: -0.021875rem;
+    color: $black;
+    margin-bottom: 2.25rem;
+  }
+
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  @media (max-width: 880px) {
+    flex-direction: column;
+
+    > div {
+      padding-top: 3.125rem;
+      padding-bottom: 3.125rem;
+    }
+
+    &__title {
+      margin-top: 4rem;
+    }
+  }
+
+  @media (max-width: 680px) {
+    &__title {
+      margin-top: 6rem;
+    }
+  }
+
+  @media (max-width: 500px) {
+    &__title {
+      margin-top: 0.5rem;
+      font-size: 2.2rem;
+    }
+  }
+}

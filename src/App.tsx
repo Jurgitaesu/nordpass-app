@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import FAQ from './components/FAQ/FAQ';
+import Footer from './components/Footer/Footer';
+import OrganizedPasswords from './components/OrganizedPasswords/OrganizedPasswords';
+import LeakedPasswords from './components/LeakedPasswords/LeakedPasswords';
+import Navigation from './components/Navigation/Navigation';
+import './styles/global-styles.scss';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="wrapper">
+      <header>
+        <Navigation />
       </header>
+      <main>
+        <OrganizedPasswords />
+        <LeakedPasswords />
+        <FAQ />
+      </main>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
