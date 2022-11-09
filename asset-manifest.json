@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/nordpass-app/static/css/main.05de6bf2.css",
+    "main.css": "/nordpass-app/static/css/main.b01745aa.css",
     "main.js": "/nordpass-app/static/js/main.099307a5.js",
     "static/js/787.4791bbb5.chunk.js": "/nordpass-app/static/js/787.4791bbb5.chunk.js",
     "static/media/np-hero-image.png": "/nordpass-app/static/media/np-hero-image.9f674ba40506d9637cc4.png",
     "index.html": "/nordpass-app/index.html",
-    "main.05de6bf2.css.map": "/nordpass-app/static/css/main.05de6bf2.css.map",
+    "main.b01745aa.css.map": "/nordpass-app/static/css/main.b01745aa.css.map",
     "main.099307a5.js.map": "/nordpass-app/static/js/main.099307a5.js.map",
     "787.4791bbb5.chunk.js.map": "/nordpass-app/static/js/787.4791bbb5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05de6bf2.css",
+    "static/css/main.b01745aa.css",
     "static/js/main.099307a5.js"
   ]
 }
